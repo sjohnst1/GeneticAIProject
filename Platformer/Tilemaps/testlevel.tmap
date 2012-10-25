@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="TilemapPipelineExtension.TilemapContent">
+    <Name>testlevel</Name>
+    <Width>20</Width>
+    <Height>8</Height>
+    <TileWidth>50</TileWidth>
+    <TileHeight>50</TileHeight>
+    <TilePalette>
+      <Item>
+        <Name>grassydirt</Name>
+        <Image>
+          <Reference>#External1</Reference>
+        </Image>
+        <TileType>Solid</TileType>
+      </Item>
+      <Item>
+        <Name>dirt</Name>
+        <Image>
+          <Reference>#External2</Reference>
+        </Image>
+        <TileType>Solid</TileType>
+      </Item>
+      <Item>
+        <Name>rock</Name>
+        <Image>
+          <Reference>#External3</Reference>
+        </Image>
+        <TileType>Solid</TileType>
+      </Item>
+    </TilePalette>
+    <Layers>
+      <Item>
+        <Name>Layer 0</Name>
+        <Width>20</Width>
+        <Height>8</Height>
+        <TileWidth>50</TileWidth>
+        <TileHeight>50</TileHeight>
+        <Visible>true</Visible>
+        <Color>FFFFFFFF</Color>
+        <TileData>-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 0 0 0 0 0 0 1</TileData>
+      </Item>
+    </Layers>
+    <PlayerStart>
+      <Position>0 0</Position>
+      <Layer>0</Layer>
+    </PlayerStart>
+  </Asset>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\GrassyDirt.png</ExternalReference>
+    <ExternalReference ID="#External2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\Dirt.png</ExternalReference>
+    <ExternalReference ID="#External3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\rock.png</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer", "Platformer\Platformer\Platformer.csproj", "{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformerContent", "Platformer\PlatformerContent\PlatformerContent.contentproj", "{FC0EC827-2E6D-4D24-B40F-5760F0B1E0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor", "Editor\Editor.csproj", "{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilemapLibrary", "TilemapLibrary\TilemapLibrary.csproj", "{627E21E1-B489-48BC-A872-69ED79C5F8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilemapPipelineExtension", "TilemapPipelineExtension\TilemapPipelineExtension.csproj", "{941E77B5-D241-4753-A640-5146913116D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Debug|x86.ActiveCfg = Debug|x86
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Debug|x86.Build.0 = Debug|x86
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Release|Any CPU.ActiveCfg = Release|x86
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Release|x86.ActiveCfg = Release|x86
+		{69A001C5-F008-4F4F-8EB9-416B2F7F8C0E}.Release|x86.Build.0 = Release|x86
+		{FC0EC827-2E6D-4D24-B40F-5760F0B1E0FF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FC0EC827-2E6D-4D24-B40F-5760F0B1E0FF}.Debug|x86.ActiveCfg = Debug|x86
+		{FC0EC827-2E6D-4D24-B40F-5760F0B1E0FF}.Release|Any CPU.ActiveCfg = Release|x86
+		{FC0EC827-2E6D-4D24-B40F-5760F0B1E0FF}.Release|x86.ActiveCfg = Release|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Debug|x86.ActiveCfg = Debug|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Debug|x86.Build.0 = Debug|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Release|Any CPU.ActiveCfg = Release|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Release|x86.ActiveCfg = Release|x86
+		{10C6CA79-5C8F-49A9-BDF2-E9199CED9BDE}.Release|x86.Build.0 = Release|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Debug|x86.ActiveCfg = Debug|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Debug|x86.Build.0 = Debug|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Release|Any CPU.ActiveCfg = Release|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Release|x86.ActiveCfg = Release|x86
+		{627E21E1-B489-48BC-A872-69ED79C5F8A4}.Release|x86.Build.0 = Release|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Debug|x86.ActiveCfg = Debug|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Debug|x86.Build.0 = Debug|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Release|Any CPU.ActiveCfg = Debug|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Release|x86.ActiveCfg = Debug|x86
+		{941E77B5-D241-4753-A640-5146913116D2}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
