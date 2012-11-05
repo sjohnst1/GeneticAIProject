@@ -56,9 +56,9 @@
 	</PlayerStart>
   </Asset>
   <ExternalReferences>
-    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\SuperDerpBrothers\Platformer\TileImages\Dirt.png</ExternalReference>
-    <ExternalReference ID="#External2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\SuperDerpBrothers\Platformer\TileImages\GrassyDirt.png</ExternalReference>
-    <ExternalReference ID="#External3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\SuperDerpBrothers\Platformer\TileImages\rock.png</ExternalReference>
-    <ExternalReference ID="#External4" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\SuperDerpBrothers\Platformer\TileImages\Spikes.png</ExternalReference>
+    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\GeneticAIProject\Platformer\TileImages\Dirt.png</ExternalReference>
+    <ExternalReference ID="#External2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\GeneticAIProject\Platformer\TileImages\GrassyDirt.png</ExternalReference>
+    <ExternalReference ID="#External3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\GeneticAIProject\Platformer\TileImages\rock.png</ExternalReference>
+    <ExternalReference ID="#External4" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\Github\GeneticAIProject\Platformer\TileImages\Spikes.png</ExternalReference>
   </ExternalReferences>
 </XnaContent>

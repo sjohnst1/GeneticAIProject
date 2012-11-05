@@ -39,6 +39,7 @@
             this.inRunForever = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.inBetweenWrites = new System.Windows.Forms.NumericUpDown();
+            this.outStatusBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.inGenerations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inBetweenWrites)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,7 @@
             this.btStop.TabIndex = 1;
             this.btStop.Text = "Stop";
             this.btStop.UseVisualStyleBackColor = true;
+            this.btStop.Click += new System.EventHandler(this.btStop_Click);
             // 
             // openFileDialog
             // 
@@ -90,6 +92,7 @@
             this.btBrowse.TabIndex = 4;
             this.btBrowse.Text = "Browse";
             this.btBrowse.UseVisualStyleBackColor = true;
+            this.btBrowse.Click += new System.EventHandler(this.btBrowse_Click);
             // 
             // label2
             // 
@@ -173,11 +176,22 @@
             0,
             0});
             // 
+            // outStatusBox
+            // 
+            this.outStatusBox.Location = new System.Drawing.Point(13, 119);
+            this.outStatusBox.Multiline = true;
+            this.outStatusBox.Name = "outStatusBox";
+            this.outStatusBox.ReadOnly = true;
+            this.outStatusBox.Size = new System.Drawing.Size(372, 93);
+            this.outStatusBox.TabIndex = 10;
+            // 
             // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(397, 262);
+            this.Controls.Add(this.outStatusBox);
             this.Controls.Add(this.inBetweenWrites);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.inRunForever);
@@ -210,5 +224,6 @@
         private System.Windows.Forms.CheckBox inRunForever;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown inBetweenWrites;
+        private System.Windows.Forms.TextBox outStatusBox;
     }
 }

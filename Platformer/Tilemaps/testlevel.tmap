@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent>
   <Asset Type="TilemapPipelineExtension.TilemapContent">
-    <Name>testlevel</Name>
-    <Width>20</Width>
-    <Height>8</Height>
+    <Name>test1</Name>
+    <Width>25</Width>
+    <Height>12</Height>
     <TileWidth>50</TileWidth>
     <TileHeight>50</TileHeight>
     <TilePalette>
@@ -32,13 +32,13 @@
     <Layers>
       <Item>
         <Name>Layer 0</Name>
-        <Width>20</Width>
-        <Height>8</Height>
+        <Width>25</Width>
+        <Height>12</Height>
         <TileWidth>50</TileWidth>
         <TileHeight>50</TileHeight>
         <Visible>true</Visible>
         <Color>FFFFFFFF</Color>
-        <TileData>-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 0 0 0 0 0 0 1</TileData>
+        <TileData>-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 -1 2 2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 0 0 0 -1 -1 -1 0 0 0 -1 -1 -1 -1 0 0 0 1 1 1 1 1 1 1 -1 -1 1 1 1 -1 -1 -1 1 1 1 0 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 -1 -1 1 1 1 -1 -1 -1 1 1 1 1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 -1 -1 1 1 1 -1 -1 -1 1 1 1 -1 -1 -1 -1 1 1 1</TileData>
       </Item>
     </Layers>
     <PlayerStart>
@@ -47,8 +47,8 @@
     </PlayerStart>
   </Asset>
   <ExternalReferences>
-    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\GrassyDirt.png</ExternalReference>
-    <ExternalReference ID="#External2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\Dirt.png</ExternalReference>
-    <ExternalReference ID="#External3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\SuperDerpBrothers\Platformer\TileImages\rock.png</ExternalReference>
+    <ExternalReference ID="#External1" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\GeneticAIProject\Platformer\TileImages\GrassyDirt.png</ExternalReference>
+    <ExternalReference ID="#External2" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\GeneticAIProject\Platformer\TileImages\Dirt.png</ExternalReference>
+    <ExternalReference ID="#External3" TargetType="Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent">C:\Users\Sarah\Documents\GitHub\GeneticAIProject\Platformer\TileImages\rock.png</ExternalReference>
   </ExternalReferences>
 </XnaContent>

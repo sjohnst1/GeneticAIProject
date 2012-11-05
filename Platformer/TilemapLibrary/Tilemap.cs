@@ -169,7 +169,7 @@ namespace TilemapLibrary
             int max = Height * Width;
             for (int i = 1; i < max; i++)
             {
-                if (tileIndex > (i * Width - 3) && tileIndex < (i * Width)) return true;
+                if (tileIndex > (i * Width - 4) && tileIndex < (i * Width)) return true;
             }
             return false;
         }

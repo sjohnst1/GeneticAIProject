@@ -91,7 +91,7 @@ namespace Platformer
         public bool Win
         {
             get;
-            protected set;
+            set;
         }
 
         #endregion

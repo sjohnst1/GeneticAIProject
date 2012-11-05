@@ -187,7 +187,7 @@ namespace Editor
             // 
             this.tileListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tileListView.Location = new System.Drawing.Point(2, 2);
-            this.tileListView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tileListView.Margin = new System.Windows.Forms.Padding(2);
             this.tileListView.Name = "tileListView";
             this.tileListView.Size = new System.Drawing.Size(154, 253);
             this.tileListView.TabIndex = 2;
@@ -197,7 +197,7 @@ namespace Editor
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 24);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -220,11 +220,11 @@ namespace Editor
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.mapViewerControl);
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(602, 503);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(602, 528);
             this.toolStripContainer1.TabIndex = 5;
@@ -310,7 +310,7 @@ namespace Editor
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -332,7 +332,7 @@ namespace Editor
             this.tabControl1.Controls.Add(this.tabPageObjects);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(166, 283);
@@ -342,9 +342,9 @@ namespace Editor
             // 
             this.tabPageTiles.Controls.Add(this.tileListView);
             this.tabPageTiles.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTiles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageTiles.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageTiles.Name = "tabPageTiles";
-            this.tabPageTiles.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageTiles.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageTiles.Size = new System.Drawing.Size(158, 257);
             this.tabPageTiles.TabIndex = 0;
             this.tabPageTiles.Text = "Tiles";
@@ -354,9 +354,9 @@ namespace Editor
             // 
             this.tabPageObjects.Controls.Add(this.objectListView);
             this.tabPageObjects.Location = new System.Drawing.Point(4, 22);
-            this.tabPageObjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageObjects.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageObjects.Name = "tabPageObjects";
-            this.tabPageObjects.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPageObjects.Padding = new System.Windows.Forms.Padding(2);
             this.tabPageObjects.Size = new System.Drawing.Size(158, 257);
             this.tabPageObjects.TabIndex = 1;
             this.tabPageObjects.Text = "Objects";
@@ -366,7 +366,7 @@ namespace Editor
             // 
             this.objectListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.objectListView.Location = new System.Drawing.Point(2, 2);
-            this.objectListView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.objectListView.Margin = new System.Windows.Forms.Padding(2);
             this.objectListView.Name = "objectListView";
             this.objectListView.Size = new System.Drawing.Size(154, 253);
             this.objectListView.TabIndex = 0;
@@ -378,7 +378,7 @@ namespace Editor
             this.listBoxLayers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxLayers.FormattingEnabled = true;
             this.listBoxLayers.Location = new System.Drawing.Point(0, 0);
-            this.listBoxLayers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxLayers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxLayers.Name = "listBoxLayers";
             this.listBoxLayers.Size = new System.Drawing.Size(166, 263);
             this.listBoxLayers.TabIndex = 0;
@@ -394,8 +394,13 @@ namespace Editor
             this.ClientSize = new System.Drawing.Size(792, 573);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(798, 601);
+            this.MinimumSize = new System.Drawing.Size(798, 601);
             this.Name = "MainForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Platformer Game Editor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

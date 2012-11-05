@@ -109,14 +109,20 @@ namespace Platformer
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //load tilemap
-            tilemap = Content.Load<Tilemap>("testlevel");
+            tilemap = Content.Load<Tilemap>("NNmap1");
 
             //load player
             player = new Player();
             player.LoadContent(Content);
             player.Tilemap = tilemap;
             player.LayerIndex = tilemap.PlayerStart.Layer;
-            player.Position = tilemap.PlayerStart.Position;
+
+            //need to modify this slightly more than 1 tile to the right
+            player.Position = tilemap.PlayerStart.Position + new Vector2(60, 20);
+
+            //target 30 fps for sped-up play, minimum for normal collision function
+            //will need to scale this with time scale: based on framerate on desktop computer
+            this.TargetElapsedTime = TimeSpan.FromSeconds(1.0f / 60.0f);
         
             
             //heart = Content.Load<Texture2D>("heart");
@@ -178,8 +184,11 @@ namespace Platformer
             //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
             //    this.Exit();
 
+            //if (gameState == GameState.Win && GetDistance() == 0) gameState = GameState.Play;
+            
             control.Update(gameTime);
-            if (control.StopGame) gameState = GameState.Start;
+
+            //if (control.StopGame) gameState = GameState.Start;
 
             switch (gameState)
             {
@@ -209,17 +218,21 @@ namespace Platformer
                     break;
 
                 case GameState.Pause:
+
                     if (GamePad.GetState(PlayerIndex.One).Buttons.Start == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                     {
                         gameState = GameState.Play;
                     }
                     break;
+
                 case GameState.Start:
+
                     if (GamePad.GetState(PlayerIndex.One).Buttons.Start == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Space) || Keyboard.GetState().IsKeyDown(Keys.Enter))
                     {
                         gameState = GameState.Play;
                     }
                     break;
+
                 default:
                     break;
             }
@@ -265,13 +278,13 @@ namespace Platformer
             else if (gameState == GameState.Lose)
             {
                 spriteBatch.Begin();
-                spriteBatch.DrawString(spriteFont, "FAIL", new Vector2(100, 200), Color.White);
+                spriteBatch.DrawString(spriteFont, "LOSE", new Vector2(100, 200), Color.White);
                 spriteBatch.End();
             }
             else if (gameState == GameState.Win)
             {
                 spriteBatch.Begin();
-                spriteBatch.DrawString(spriteFont, "A WINRAR IS YOU", new Vector2(100, 200), Color.White);
+                spriteBatch.DrawString(spriteFont, "A WINNER IS YOU", new Vector2(100, 200), Color.White);
                 spriteBatch.End();
             }
 
@@ -280,5 +293,66 @@ namespace Platformer
 
         #endregion
 
+        public void ResetGame()
+        {
+            player.Position = tilemap.PlayerStart.Position + new Vector2(60, 20); ;
+            player.AddHealth();
+            player.Win = false;
+            gameState = GameState.Play;
+        }
+
+        public int[] GetNNInput(int inputWidth, int inputHeight)
+        {
+            int xpos = (int)(player.Position.X / player.Tilemap.TileWidth);
+            int ypos = (int)(player.Position.Y / player.Tilemap.TileHeight);
+            int width = player.Tilemap.Width;
+            int height = player.Tilemap.Height;
+
+            int xStartIndex = xpos - (inputWidth / 2);
+            int xEndIndex = xpos + (inputWidth / 2);
+            if (inputWidth % 2 != 0) xEndIndex++;
+
+            int yStartIndex = ypos - (inputHeight / 2);
+            int yEndIndex = ypos + (inputHeight / 2);
+            if (inputHeight % 2 != 0) yEndIndex++;
+
+            int[] input = new int[inputWidth * inputHeight];
+
+            int layerIndex = player.LayerIndex;
+            TilemapLayer layer = player.Tilemap.Layers[layerIndex];
+
+            int iX = 0;
+            int iY = 0;
+
+            for (int y = yStartIndex; y < yEndIndex; y++)
+            {
+                for (int x = xStartIndex; x < xEndIndex; x++)
+                {
+                    //get the tile type
+                    //in this case, if it's empty, it's 0. If it's not, it's 1.
+
+                    if (x < 0 || y < 0 || x >= width || y >= height)
+                    {
+                        input[inputWidth * iY + iX] = 0;
+                    }
+                    else
+                    {
+                        int tileIndex = layer.TileData[x + y * layer.Width];
+                        if (tileIndex == -1) input[inputWidth * iY + iX] = 0;
+                        else input[inputWidth * iY + iX] = 1;
+                    }
+                    iX++;
+                }
+                iY++;
+                iX = 0;
+            }
+
+            return input;
+        }
+
+        public int GetDistance()
+        {
+            return (int)(player.Position.X / player.Tilemap.TileWidth);
+        }
     }
 }
